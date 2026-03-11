@@ -17,14 +17,14 @@ def main():
 
     expansion_1()
 
-    expansion_2()
+    # expansion_2()
 
-    newtons_series()
+    # newtons_series()
 
-    brothers_formula()
+    # brothers_formula()
 
 
-def print_as_text(e):
+def print_as_text(e: float) -> None:
 
     """
     Takes a value for e and prints it below a definitive value,
@@ -46,7 +46,7 @@ def print_as_text(e):
     print("\n")
 
 
-def expansion_1():
+def expansion_1() -> None:
 
     print(WHITE + "First expansion\nn = 100000\n---------------" + RESET)
 
@@ -56,7 +56,7 @@ def expansion_1():
     print_as_text(e)
 
 
-def expansion_2():
+def expansion_2() -> None:
 
     print(WHITE +
           "Second expansion\nn = 0.000000001\n----------------" +
@@ -68,7 +68,7 @@ def expansion_2():
     print_as_text(e)
 
 
-def newtons_series():
+def newtons_series() -> None:
 
     print(WHITE + "Newton's Series\nn = 0 to 12\n---------------" + RESET)
 
@@ -80,7 +80,7 @@ def newtons_series():
     print_as_text(e)
 
 
-def brothers_formula():
+def brothers_formula() -> None:
 
     print(WHITE + "Brothers Formula\nn = 0 to 8\n----------------" + RESET)
 
@@ -92,4 +92,6 @@ def brothers_formula():
     print_as_text(e)
 
 
-main()
+if __name__ == "__main__":
+
+    main()
